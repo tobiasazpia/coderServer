@@ -13,8 +13,14 @@ class UserManager {
         };
         UserManager.#users.push(user);
     }
-}
+
+    read(){
+        return UserManager.#users
+    }
+} 
 
 const usuarios = new UserManager();
 
 usuarios.create({foto: "foto.png", mail: "email@ejemplo.com" , password: "1234"});
+
+console.log(usuarios.read())
