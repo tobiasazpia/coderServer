@@ -23,4 +23,7 @@ const usuarios = new UserManager();
 
 usuarios.create({foto: "foto.png", mail: "email@ejemplo.com" , password: "1234"});
 
+
+usuarios.create({foto: "foto2.png", mail: "otroemail@otroejemplo.com" , password: "4321"});
+
 console.log(usuarios.read())
